@@ -30,7 +30,7 @@ apiUrls.forEach( url=> exec(`cd  ${docset.resPath}/Documents; wget ${url}`) );
 
 /** create docset index */
 fs.writeFile(
-	`${docset.path}/Contents/Info.plist`, 
+	`${docset.path}/Contents/Info.plist`,
 	`<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -72,7 +72,7 @@ fs.readdirSync(`${docset.resPath}/Documents`).forEach(function(file) {
 		db.run(`INSERT INTO searchIndex (name, type, path) VALUES ('${item.text()}', '${keywords}', '${file}${item.attr("href")}')`);
 	}
 
-	$(".header, .lbox, .search, .toc, .footer").remove();
+	$(".header, .lbox, .r-fixed, .search, .toc, .footer").remove();
 	fs.writeFileSync(`${docset.resPath}/Documents/${file}`, $.html());
 
 });
