@@ -36,9 +36,9 @@ fs.writeFile(
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>ThinkJS-${lang}</string>
+	<string>ThinkJS</string>
 	<key>CFBundleName</key>
-	<string>ThinkJS ${version}</string>
+	<string>ThinkJS</string>
 	<key>DocSetPlatformFamily</key>
 	<string>ThinkJS</string>
 	<key>isDashDocset</key>
@@ -71,7 +71,7 @@ fs.readdirSync(`${docset.resPath}/Documents`).forEach(function(file) {
 		}
 		db.run(`INSERT INTO searchIndex (name, type, path) VALUES ('${item.text()}', '${keywords}', '${file}${item.attr("href")}')`);
 	}
-
+	$("title").html( $("title").html().replace(/\s+\-.+$/, '') );
 	$(".header, .lbox, .r-fixed, .search, .toc, .footer").remove();
 	fs.writeFileSync(`${docset.resPath}/Documents/${file}`, $.html());
 

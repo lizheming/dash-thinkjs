@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>ThinkJS-en</string>
+	<string>ThinkJS</string>
 	<key>CFBundleName</key>
-	<string>ThinkJS 2.0</string>
+	<string>ThinkJS</string>
 	<key>DocSetPlatformFamily</key>
 	<string>ThinkJS</string>
 	<key>isDashDocset</key>
