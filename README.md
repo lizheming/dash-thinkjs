@@ -1,5 +1,7 @@
 ## ThinkJS Documentation Generator
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/lizheming/dash-thinkjs.svg)](https://greenkeeper.io/)
+
 ### About
 
 Generates a Dash docset for ThinkJS.
