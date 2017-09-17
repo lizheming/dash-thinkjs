@@ -9,8 +9,8 @@
     "compile-en": "node build.js en"
   },
   "dependencies": {
-    "cheerio": "^0.19.0",
-    "sqlite-sync": "^0.1.9",
+    "cheerio": "^0.22.0",
+    "sqlite-sync": "^0.3.6",
     "sync-exec": "^0.6.2"
   },
   "keywords": [
